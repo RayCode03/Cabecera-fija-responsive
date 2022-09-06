@@ -1,19 +1,12 @@
-jQuery('document').ready(function($) {
+jQuery("document").ready(function ($) {
+  var menuBtn = $(".menu-icono");
+  menu = $(".navegacion ul");
 
-    var menuBtn = $('.menu-icono');
-        menu = $('.navegacion ul') 
-        
-    menuBtn.click(function(){
-
-        if (menu.hasClass('show')){
-
-            menu.removeClass('show');
-        } else {
-
-            menu.addClass('show');
-
-        }
-
-    });
-
+  menuBtn.click(function () {
+    if (menu.hasClass("show")) {
+      menu.removeClass("show");
+    } else {
+      menu.addClass("show");
+    }
+  });
 });
